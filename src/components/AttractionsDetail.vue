@@ -40,7 +40,7 @@ export default {
     methods:{
         handleClick(){
 
-             fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${this.attraction.place_id}&key=AIzaSyBeXDkg2kK4Ubtz0v0B8Nx2lQHZvcKYs-s`)
+             fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${this.attraction.place_id}&key=key`)
             .then(response => response.json())
             .then(data => this.attraction_info = data.result)
             .then(data => eventBus.$emit('attraction-info', data))
