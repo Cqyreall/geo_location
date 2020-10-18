@@ -9,8 +9,13 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "leaflet": "^1.7.1",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
+    "vue": "^2.6.11",
+    "vue2-google-maps": "^0.10.7",
+    "vue2-leaflet": "^2.6.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
