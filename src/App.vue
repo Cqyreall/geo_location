@@ -133,7 +133,7 @@ export default {
     },
 
     filterSearch(){
-      fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyBeXDkg2kK4Ubtz0v0B8Nx2lQHZvcKYs-s&query=${this.filter}-in-${this.location.city.toLowerCase()}`)
+      fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?key=key-s&query=${this.filter}-in-${this.location.city.toLowerCase()}`)
       .then(response => response.json())
       .then(data => this.places = data.results)
     },
@@ -174,14 +174,14 @@ export default {
 
     // axios.get()
     
-    // APIKEY: AIzaSyBeXDkg2kK4Ubtz0v0B8Nx2lQHZvcKYs-s
+    
 
 
 
     // fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${
     //     this.latitude
     //   },${this.longitude}&types=parks&radius=${20 *
-    //     1000}&key=AIzaSyBeXDkg2kK4Ubtz0v0B8Nx2lQHZvcKYs-s`)
+    //     1000}&key=key`)
     //   .then(response => response.json())
     //   .then(data => this.test = data.results)
 
